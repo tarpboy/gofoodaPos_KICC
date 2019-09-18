@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="신용" />
+
+                <Button
+                    android:id="@+id/btnCreditCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnCredit"
+                    android:text="신용취소" />
+
+                <Button
+                    android:id="@+id/btnCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnCreditCancel"
+                    android:text="현금승인" />
+
+                <Button
+                    android:id="@+id/btnCashCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnCash"
+                    android:text="현금취소" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnReprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnCashCancel"
+                    android:text="인쇄" />
+
+                <Button
+                    android:id="@+id/btnDongleReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnReprint"
+                    android:text="등록" />
+
+                <Button
+                    android:id="@+id/btnLastQuery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/btnDongleReg"
+                    android:text="재 조회" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="승인번호" />
+
+                <EditText
+                    android:id="@+id/edtAuthNo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="승인일시" />
+
+                <EditText
+                    android:id="@+id/edtAuthDate"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래번호" />
+
+                <EditText
+                    android:id="@+id/edtTranNo"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:text="2000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="금액" />
+
+
+                <EditText
+                    android:id="@+id/EditTextAmount"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/TextCATID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CATID" />
+
+
+                <EditText
+                    android:id="@+id/EditTextCATID"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    android:text="1079518001"/>
+
+                <TextView
+                    android:id="@+id/TextCompanyNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COMPNO" />
+
+                <EditText
+                    android:id="@+id/EditTextCompanyNO"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextNoCVM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOCVM" />
+
+
+                <EditText
+                    android:id="@+id/EditTextNoCVM"
+                    android:textSize="12sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    />
+
+                <TextView
+                    android:id="@+id/TextPaperPrint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종이영수증" />
+
+
+                <EditText
+                    android:id="@+id/EditTextPaperPrint"
+                    android:textSize="12sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    />
+
+                <TextView
+                    android:id="@+id/TextNFC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NFC사용여부" />
+
+
+                <EditText
+                    android:id="@+id/EditTextNFC"
+                    android:textSize="12sp"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <EditText
+                        android:id="@+id/edtReceipt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:ems="10"
+                        android:lines="20"
+                        />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_back"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+
+            <RelativeLayout
+                android:id="@+id/ll_group_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/pos_back_white1"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/btn_back"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/btn_next"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_menu_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/pos_back_white2"
+                android:layout_height="0dp"
+                android:layout_weight="5.3">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    android:scrollbarSize="5dp">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_order"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/pos_back_black"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/order_title"/>
+
+
+
+                    <Button
+                        android:id="@+id/iv_receit_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/calendar_day_today_line_color_s"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:text="영수증 발급\nCard receipt"
+                        android:layout_marginLeft="30dp"/>
+
+
+
+
+                    <Button
+                        android:id="@+id/iv_order_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/calendar_day_today_line_color_s"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:text="카드결제 취소\nCard refund"
+                        android:layout_marginRight="30dp"/>
+
+
+
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/iv_cash_cancel"
+                        android:layout_toLeftOf="@id/iv_order_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@color/calendar_day_today_line_color_s"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:text="현금영수증 취소\nCash receipt cancle"
+                        android:layout_marginRight="10dp"/>
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white">
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerview_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+                            <com.daimajia.slider.library.SliderLayout
+                                android:id="@+id/sl_ad"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+
+                            </com.daimajia.slider.library.SliderLayout>
+
+                            <VideoView
+                                android:id="@+id/videoView"
+                                android:foregroundGravity="center"
+                                android:layout_centerInParent="true"
+                                android:background="#00000000"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/rl_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ProgressBar
+                                    android:id="@+id/videoProgress"
+                                    style="?android:attr/progressBarStyleLarge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:tooltipText=""
+                                    android:indeterminateDrawable="@drawable/progress" >
+                                </ProgressBar>
+
+
+                                <TextView
+                                    android:layout_below="@id/videoProgress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="영상 준비중..."
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:weightSum="10"
+                        android:layout_weight="2">
+
+
+                        <Button
+                            android:id="@+id/bt_clear_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/btn_cancle"
+                            android:textColor="@color/defaul_red"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:textSize="11sp"
+                            android:text="(Delete All)"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            android:weightSum="9"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textSize="19sp"
+                                    android:textColor="#f4bc76"
+                                    android:text="총메뉴수량\nTotal Value"/>
+
+
+                                <TextView
+                                    android:id="@+id/tv_total_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right|center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textSize="51sp"
+                                    android:text="5 개"/>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="#f4bc76"
+                                    android:textSize="19sp"
+                                    android:text="총금액\nTotal Price"/>
+
+                                <TextView
+                                    android:id="@+id/tv_total_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right|center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textSize="44sp"
+                                    android:text="10000원"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:weightSum="2">
+
+
+
+                                <Button
+                                    android:id="@+id/bt_cash"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#fd5126"
+                                    android:textColor="@color/white"
+                                    android:textSize="21sp"
+                                    android:text="현금결제\nCash"/>
+
+
+                                <Button
+                                    android:id="@+id/bt_card"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="#80c7b0"
+                                    android:textColor="@color/white"
+                                    android:textSize="21sp"
+                                    android:text="카드결제\nCard"/>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_test"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="470dp"
+            android:src="@drawable/goblin2"/>
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="480dp"
+            android:src="@drawable/goblin3"/>
+
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_animation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_main_menu_off"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress" >
+        </ProgressBar>
+
+
+        <TextView
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="잠시만 기다려 주세요..."/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_all_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_bluetooth_state"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#FDFDFD"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/question_cancle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2C2C2E"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="재료 원산지 및 중량"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="재료명"/>
+
+                <EditText
+                    android:id="@+id/et_ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittext_round_3"
+                    android:textSize="18sp"
+                    android:hint="ex) 소고기"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="재료명(영문)"/>
+
+                <EditText
+                    android:id="@+id/et_origin_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_round_3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:hint="ex) Beaf"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="원산지"/>
+
+                <EditText
+                    android:id="@+id/et_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_round_3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:hint="ex) 국내산"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="중량 (g)"/>
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_round_3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:hint="ex) 120"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#E3E3E3">
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10"
+                >
+
+
+                <Button
+                    android:id="@+id/bt_question_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginRight="3dp"
+                    android:background="#8FC5B2"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="취소"/>
+
+                <Button
+                    android:id="@+id/bt_question_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="3dp"
+                    android:background="#EB5F39"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="확인"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/question_cancle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <TextView
+                android:id="@+id/tv_notice_popup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="주문내역을 삭제하시겠습니까?"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+
+
+            <Button
+                android:id="@+id/bt_notice_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/defaul_red"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="확인"/>
+
+
+
+            <Button
+                android:id="@+id/bt_notice_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/default_blue"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="취소"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/bt_notice_other"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/popup_progress_text_color"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="취소"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

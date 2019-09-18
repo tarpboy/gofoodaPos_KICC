@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#312F32</color>
+    <color name="colorPrimaryDark">#312F32</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+
+
+
+    <color name="white">#ffffff</color>
+
+    <!-- Keypad Color -->
+    <color name="keypad_bg_color">#FFF7F7F7</color>
+    <color name="keypad_text_color_n">#FF999999</color>
+    <color name="keypad_text_color_s">#FF42495B</color>
+    <color name="keypad_btn_bg_color_n">#FFFFFFFF</color>
+    <color name="keypad_btn_bg_color_s">#FFE8E8E8</color>
+    <color name="keypad_confirm_text_color_n">#FFDE716A</color>
+    <color name="keypad_confirm_text_color_s">#FFDE716A</color>
+    <color name="keypad_btn_confirm_bg_color_n">#FFFFFFFF</color>
+    <color name="keypad_btn_confirm_bg_color_s">#FFF9F1F0</color>
+    <color name="keypad_line_color">#FFE4E4E4</color>
+
+
+
+    <!-- TextView 정보 -->
+    <color name="textview_color_n">#FF999999</color>
+    <color name="textview_color_s">#FF999999</color>
+    <color name="textview_color_d">#7F999999</color>
+    <color name="textview_color_p">#FFDF453B</color>
+
+
+    <!-- Popup 테두리 색상 -->
+    <color name="popup_box_stroke">#E634445e</color>
+    <color name="popup_box_shadow">#77464646</color>
+
+
+
+    <!-- Button Type A -->
+    <color name="button_type_a_n">#FFFFFFFF</color>
+    <color name="button_type_a_s">#FFFFFFFF</color>
+    <color name="button_type_a_d">#CFFFFFFF</color>
+
+    <!-- Button Type C -->
+    <color name="button_type_c_n">#FF666666</color>
+    <color name="button_type_c_s">#FF666666</color>
+    <color name="button_type_c_d">#59666666</color>
+
+
+
+    <color name="black">#99000000</color>
+
+    <color name="defaul_red">#fd5126</color>
+    <color name="default_blue">#80c7b0</color>
+
+    <color name="blackalpha">#80000000</color>
+
+
+    <!-- Calendar Color -->
+    <color name="calendar_bg_color">#FFF7F7F7</color>
+    <color name="calendar_week_sun_color">#FFDF453B</color>
+    <color name="calendar_week_etc_color">#FF999999</color>
+    <color name="calendar_week_sat_color">#FF0F82D3</color>
+    <color name="calendar_month_text_color">#FF42495B</color>
+    <color name="calendar_day_text_color_d">#FFE1E1E1</color>
+    <color name="calendar_day_text_color_n">#FF999999</color>
+    <color name="calendar_day_text_color_s">#FF42495B</color>
+    <color name="calendar_day_sun_text_color_d">#FFF5C8C5</color>
+    <color name="calendar_day_sun_text_color_n">#FFDF453B</color>
+    <color name="calendar_day_sun_text_color_s">#FFDF453B</color>
+    <color name="calendar_day_sat_text_color_d">#FFB7DAF2</color>
+    <color name="calendar_day_sat_text_color_n">#FF0F82D3</color>
+    <color name="calendar_day_sat_text_color_s">#FF0F82D3</color>
+    <color name="calendar_day_bg_color_n">#FFFFFFFF</color>
+    <color name="calendar_day_bg_color_s">#FFE8E8E8</color>
+    <color name="calendar_day_today_line_color_n">#FF00AEEF</color>
+    <color name="calendar_day_today_line_color_s">#FF00AEEF</color>
+
+
+
+
+
+    <color name="tableview_column_bg_n">#FFFFFFFF</color>
+    <color name="tableview_column_bg_s">#FFFFFAE9</color>
+    <color name="tableview_column_line">#FFE4E4E4</color>
+
+
+
+
+    <!-- Progress Color -->
+    <color name="popup_progress_text_color">#FF666666</color>
+
+
+
+    <color name="default_background">#f3efee</color>
+
+
+
+
+    <!-- Stats Color -->
+    <color name="stats_time_bg">#FFF7F7F7</color>
+    <color name="stats_day_bg">#B2EBF4</color>
+    <color name="stats_week_bg">#FFF5C8C5</color>
+    <color name="stats_month_bg">#FFE8E8E8</color>
+
+
+
+    <color name="orange">#FFCC80</color>
+
+
+
+</resources>

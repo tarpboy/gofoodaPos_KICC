@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_fragment"
+    >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <LinearLayout
+            android:id="@+id/login_ll"
+            android:layout_width="960dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="550dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_thimb"
+                    android:layout_width="280dp"
+                    android:layout_height="480dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="550dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_thimb1"
+                    android:layout_width="280dp"
+                    android:layout_height="480dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="550dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_thimb2"
+                    android:layout_width="280dp"
+                    android:layout_height="480dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.45">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

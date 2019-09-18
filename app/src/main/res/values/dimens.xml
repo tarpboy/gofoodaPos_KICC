@@ -1,0 +1,105 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+        <!-- Default screen margins, per the Android Design guidelines. -->
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+        <dimen name="default_component_margin">8dp</dimen>
+
+
+        <!-- Login Component Dimens -->
+        <dimen name="login_component_width">300dp</dimen>
+        <dimen name="login_component_height">45dp</dimen>
+        <dimen name="login_component_marginTop">5dp</dimen>
+        <dimen name="login_logo_marginBottom">20dp</dimen>
+
+        <dimen name="button_typeA_height">35dp</dimen>
+        <dimen name="button_text_size_def">16sp</dimen>
+
+
+        <!-- Keypad 팝업 Dimens -->
+        <dimen name="keypad_width">276dp</dimen>
+        <dimen name="keypad_height">344dp</dimen>
+        <dimen name="keypad_number_text_size">21sp</dimen>
+        <dimen name="keypad_time_text_size">31sp</dimen>
+
+
+
+        <!-- Screen Default Dimens -->
+        <dimen name="screen_top_height">55dp</dimen>
+        <dimen name="screen_padding">15dp</dimen>
+        <dimen name="screen_top_padding">25dp</dimen>
+        <dimen name="screen_sub_margin5">5dp</dimen>
+        <dimen name="screen_sub_margin10">10dp</dimen>
+        <dimen name="screen_sub_margin15">15dp</dimen>
+        <dimen name="screen_sub_margin20">20dp</dimen>
+        <dimen name="screen_sub_margin25">25dp</dimen>
+        <dimen name="screen_sub_padding7_5">7.5dp</dimen>
+        <dimen name="screen_sub_padding10">10dp</dimen>
+        <dimen name="screen_sub_padding15">15dp</dimen>
+        <dimen name="screen_sub_padding20">20dp</dimen>
+        <dimen name="screen_sub_padding25">25dp</dimen>
+        <dimen name="screen_comp_size100">100dp</dimen>
+        <dimen name="screen_comp_size125">125dp</dimen>
+        <dimen name="screen_comp_size150">150dp</dimen>
+        <dimen name="screen_comp_size175">175dp</dimen>
+        <dimen name="screen_comp_size200">200dp</dimen>
+        <dimen name="screen_comp_size250">250dp</dimen>
+        <dimen name="screen_comp_text_size_small">70dp</dimen>
+        <dimen name="screen_comp_text_size">100dp</dimen>
+
+
+
+        <!-- EditText Dimens -->
+        <dimen name="edittext_padding">5dp</dimen>
+        <dimen name="edittext_height">30dp</dimen>
+        <dimen name="edittext_text_size_def">16sp</dimen>
+        <dimen name="edittext_text_size_small">13sp</dimen>
+        <dimen name="edittext_text_size_large">19sp</dimen>
+
+
+
+        <!-- TextView Dimens -->
+        <dimen name="textview_padding">5dp</dimen>
+        <dimen name="textview_height">30dp</dimen>
+        <dimen name="textview_text_size_def">16sp</dimen>
+        <dimen name="textview_text_size_small">13sp</dimen>
+        <dimen name="textview_text_size_large">19sp</dimen>
+
+
+
+        <!-- Code Popup Dimens -->
+        <dimen name="popup_padding">5px</dimen>
+        <dimen name="popup_code_def_width">200dp</dimen>
+        <dimen name="popup_code_left_margin">10dp</dimen>
+        <dimen name="popup_code_title_size">17sp</dimen>
+        <dimen name="popup_code_title_height">35dp</dimen>
+        <dimen name="popup_code_list_text_size">16sp</dimen>
+        <dimen name="popup_code_list_height">35sp</dimen>
+
+
+
+        <!-- Calendar 팝업 Dimens -->
+        <dimen name="calendar_width">301dp</dimen>
+        <dimen name="calendar_height">384dp</dimen>
+        <dimen name="calendar_none_select_height">344dp</dimen>
+        <dimen name="calendar_top_title_height">455dp</dimen>
+        <dimen name="calendar_week_height">18dp</dimen>
+        <dimen name="calendar_week_text_size">11sp</dimen>
+        <dimen name="calendar_month_text_height">35dp</dimen>
+        <dimen name="calendar_month_text_size">19sp</dimen>
+        <dimen name="calendar_day_text_height">35dp</dimen>
+        <dimen name="calendar_day_text_size">19sp</dimen>
+
+
+        <!-- Progress Popup Dimens -->
+        <dimen name="popup_progress_bg_width">250dp</dimen>
+        <dimen name="popup_progress_bg_height">175dp</dimen>
+        <dimen name="popup_progress_width">50dp</dimen>
+        <dimen name="popup_progress_height">50dp</dimen>
+        <dimen name="popup_progress_text_size">16sp</dimen>
+
+
+
+</resources>
